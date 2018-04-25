@@ -53,7 +53,7 @@ public class PlayerShooting : MonoBehaviour {
         shootFlash.SetActive(false);
 	}
 
-	void ShootRay()
+	void ShootRay() // need to refactor bullet spray
 	{
 		timer = 0f;
         shootFlash.SetActive(true);
@@ -61,7 +61,7 @@ public class PlayerShooting : MonoBehaviour {
 
 		gunLine.enabled = true;
         gunLine.SetPosition (0, gunEnd.position);
-        Vector3 randomShootDirection = Random.insideUnitSphere.normalized * spreadRange;
+        Vector3 randomShootDirection = Random.insideUnitSphere.normalized * spreadRange; 
 
         shootRay.origin = transform.position;
         shootRay.direction = shootPoint - transform.position + randomShootDirection;
