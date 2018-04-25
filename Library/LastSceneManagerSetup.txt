@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/MainProject/Top_Dawn_Shooter.unity
+  isLoaded: 1
+  isActive: 1
